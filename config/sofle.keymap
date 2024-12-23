@@ -52,13 +52,13 @@
             display-name = "lower";
 // TODO: Some binds are waiting for shifted keycode support.
 // ------------------------------------------------------------------------------------------------------------
-// |   `   |      |      |       |       |      |                |      |      |       |   -  |   =   |       |
+// |   `   |      |      |       |       |      |                |      |      |       |      |   -   |   =   |
 // |       |      |      |       |       |      |                |      |      |       |   {  |   }   |   \   |
 // |       |      |      |       |       |      |                |      |      |       |      |       |       |
 // |       |      |      |       |       |      |      |  |      |      |      |       |      |       |       |
 //                |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
-&kp GRAVE  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &kp MINUS   &kp EQUAL   &trans
+&kp GRAVE  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans   &kp MINUS   &kp EQUAL   
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &kp LBRC  &kp RBRC  &kp BSLH
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -71,13 +71,13 @@
         raise_layer {
             display-name = "raise";
 // ------------------------------------------------------------------------------------------------------------
-// |    `  |      |      |       |       |      |                |      |      |       |      |       |       |
+// |    `  |      |      |       |       |      |                |      |      |       |      |   -   |   =   |
 // |       |      |      |       |       |      |                | PGUP |      |   ^   |      |       |       |
 // |       |      |      |       |       |      |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
 // |       |      |      |       |       |      |      |  |      |      |      |       |      |       |       |
 //                |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
-&kp GRAVE  &trans  &trans  &trans  &trans  &trans                  &trans    &trans    &trans   &trans    &trans  &trans
+&kp GRAVE  &trans  &trans  &trans  &trans  &trans                  &trans    &trans    &trans   &trans  &kp MINUS   &kp EQUAL
 &trans  &trans  &trans  &trans  &trans  &trans                  &kp PG_UP &trans    &kp UP   &trans    &kp N0  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans   &trans    &trans  &trans
